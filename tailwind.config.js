@@ -13,6 +13,8 @@ export default {
       colors: {
         bg: "#FAF4F4",
         banner: "#DCC6C6",
+        footer: "rgb(63, 49, 49)",
+        price: "rgb(239, 68 ,68 / var(--tw-text-opacity))",
       },
     },
   },

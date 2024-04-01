@@ -4,6 +4,10 @@ const nav = [
     link: "/",
   },
   {
+    title: "BLOG",
+    link: "/blog",
+  },
+  {
     title: "ABOUT",
     link: "/about",
   },
@@ -14,10 +18,6 @@ const nav = [
   {
     title: "GALLERY",
     link: "/gallery",
-  },
-  {
-    title: "BLOG",
-    link: "/blog",
   },
 ];
 

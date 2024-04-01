@@ -6,7 +6,11 @@ import MiddleNav from "../../components/Nav/MiddleNav";
 import BottomNav from "../../components/Nav/BottomNav";
 import MNav from "../../components/Nav/MNav/MNav";
 import hero from "../../assets/wo.webp";
-import Banner from "../../components/Hero/Banner";
+import Hero from "../../components/Hero/Hero";
+import Category from "../../components/category/Category";
+import Product from "../../components/product/Product";
+import Banner from "../../components/banner/Banner";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   return (
@@ -19,13 +23,13 @@ const Home = () => {
         image={favicon}
       />
       <TopNav />
-      <div className="static">
-        {" "}
-        <MiddleNav />
-        <BottomNav />
-      </div>
-
+      <MiddleNav />
+      <BottomNav />
+      <Hero />
+      <Category />
+      <Product />
       <Banner />
+      <Footer />
     </>
   );
 };

@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const Banner = () => {
+const Hero = () => {
   let settings = {
     arrows: false,
     dots: false,
@@ -28,7 +28,9 @@ const Banner = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequatur ullam sint debitis.
             </p>
-            <button className="bg-banner px-5 py-3 rounded-sm">Shop Now</button>
+            <button className="bg-banner text-black px-5 py-3 rounded-sm">
+              Shop Now
+            </button>
           </div>
         </div>
 
@@ -41,7 +43,7 @@ const Banner = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequatur ullam sint debitis.
             </p>
-            <button className="bg-banner px-5 py-3 rounded-sm">
+            <button className="bg-banner text-black px-5 py-3 rounded-sm">
               Learn More
             </button>
           </div>
@@ -51,4 +53,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default Hero;

@@ -8,7 +8,11 @@ import { Context } from "../../Hooks/Context";
 import { AiOutlineClose } from "react-icons/ai";
 
 const MiddleNav = () => {
-  const { toggleNav, showNav } = useContext(Context);
+  const { toggleNav, state } = useContext(Context);
+
+  const totalItems = state.items
+    ? state.items.reduce((total, item) => total + item.quantity, 0)
+    : 0;
 
   return (
     <>
@@ -28,7 +32,7 @@ const MiddleNav = () => {
             <BsCart3 />
             {/* Display the count */}
             <span className=" rounded-full md:p-1 absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 text-center">
-              0
+              {totalItems}
             </span>
           </span>
           <span className="px-5 cursor-pointer mx-2">

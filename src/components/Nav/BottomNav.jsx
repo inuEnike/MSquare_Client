@@ -9,8 +9,8 @@ const BottomNav = () => {
   return (
     <div>
       <ul className="hidden md:flex justify-center items-center my-5 text-xs">
-        {nav.map((items) => (
-          <li className="px-5 hover:text-banner ">
+        {nav.map((items, index) => (
+          <li className="px-5 hover:text-banner " key={index}>
             <Link to={items.link}>{items.title}</Link>
           </li>
         ))}
